@@ -2,8 +2,8 @@
 tmux é um divisor de telas em uma janela unica de terminal
 util para diversas coisas como acesso a ssh + monitoramento de logs
 nvim + debuging e testes
-## comandos shell
 
+## comandos shell
 
 | Combinação de Teclas                | Descrição                                   |
 |-------------------------------------|---------------------------------------------|
@@ -16,8 +16,10 @@ nvim + debuging e testes
 
 
 ## combinação de teclas
+```
 MASTRE = CTRL(^) + b
 percione a tecla mestre e depois a proxima tecla, não pode ser tudo junto, ERRADO - ctrl+b+c, Certo - Ctrl+b c
+```
 
 | Combinação de Teclas | Descrição |
 |----------------------|-----------|
@@ -30,21 +32,15 @@ percione a tecla mestre e depois a proxima tecla, não pode ser tudo junto, ERRA
 ### navegação entre janelas
 | Combinação de Teclas | Descrição |
 |----------------------|-----------|
-| MASTRE + c | nova janela
-|MASTRE + n | proxima janela
-|MASTRE + p = janela anterior
-|MASTRE + 0-9 = janela especifica
+| MASTRE + c   | nova janela       |
+| MASTRE + n   | proxima janela    |
+| MASTRE + p   | janela anterior   |
+| MASTRE + 0-9 | janela especifica |
 
-navegação entre janelas horizontal/vertical
-MASTRE + " = Modo Horizontal
-MASTRE + % = modo vertical
-MASTRE + z = foco na janela
-MASTRE + setas (cima, baixo, esquerda, direita) = troca de janela
-
-| Combinação de Teclas | Descrição                                            |
-|----------------------|------------------------------------------------------|
-| Ctrl + C              | Copiar texto selecionado para a área de transferência |
-| Ctrl + V              | Colar texto da área de transferência                  |
-| Ctrl + S              | Salvar o arquivo atual                                |
-| Ctrl + Shift + T      | Reabrir a última aba fechada no navegador             |
-| Ctrl + F5             | Forçar atualização da página no navegador             |
+### navegação entre janelas horizontal/vertical
+| Combinação de Teclas | Descrição |
+|----------------------|-----------|
+| MASTRE + "     | Modo Horizontal |
+| MASTRE + %     | modo vertical   |
+| MASTRE + z     | foco na janela  |
+| MASTRE + setas | troca de janela |
