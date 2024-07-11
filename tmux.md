@@ -30,3 +30,11 @@ MASTRE + " = Modo Horizontal
 MASTRE + % = modo vertical
 MASTRE + z = foco na janela
 MASTRE + setas (cima, baixo, esquerda, direita) = troca de janela
+
+| Combinação de Teclas | Descrição                                            |
+|----------------------|------------------------------------------------------|
+| Ctrl + C              | Copiar texto selecionado para a área de transferência |
+| Ctrl + V              | Colar texto da área de transferência                  |
+| Ctrl + S              | Salvar o arquivo atual                                |
+| Ctrl + Shift + T      | Reabrir a última aba fechada no navegador             |
+| Ctrl + F5             | Forçar atualização da página no navegador             |
