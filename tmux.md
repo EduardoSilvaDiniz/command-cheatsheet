@@ -1,9 +1,4 @@
-# Introdução
-tmux é um divisor de telas em uma janela unica de terminal
-util para diversas coisas como acesso a ssh + monitoramento de logs
-nvim + debuging e testes
-
-## comandos shell
+## Linha de Comandos
 
 | Combinação de Teclas                | Descrição                                   |
 |-------------------------------------|---------------------------------------------|
@@ -15,11 +10,9 @@ nvim + debuging e testes
 | tmux kill-server                    | mata todas as sessoẽs                       |
 
 
-## combinação de teclas
-```
+## Combinação de Teclas
 MASTRE = CTRL(^) + b
 percione a tecla mestre e depois a proxima tecla, não pode ser tudo junto, ERRADO - ctrl+b+c, Certo - Ctrl+b c
-```
 
 | Combinação de Teclas | Descrição |
 |----------------------|-----------|
@@ -29,7 +22,7 @@ percione a tecla mestre e depois a proxima tecla, não pode ser tudo junto, ERRA
 | MASTRE + t | mostra horas        |
 
 
-### navegação entre janelas
+### Navegação Entre Janelas
 | Combinação de Teclas | Descrição |
 |----------------------|-----------|
 | MASTRE + c   | nova janela       |
@@ -37,7 +30,7 @@ percione a tecla mestre e depois a proxima tecla, não pode ser tudo junto, ERRA
 | MASTRE + p   | janela anterior   |
 | MASTRE + 0-9 | janela especifica |
 
-### navegação entre janelas horizontal/vertical
+### Navegação Entre Janelas Horizontal/Vertical
 | Combinação de Teclas | Descrição |
 |----------------------|-----------|
 | MASTRE + "     | Modo Horizontal |

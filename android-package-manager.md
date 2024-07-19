@@ -1,28 +1,32 @@
-## comandos shell
-
+# Tabela de Apps
 | nome do aplicativo | nome do pacote                              |
 |--------------------|---------------------------------------------|
 | Play Store         | com.android.vending                         |
 | Google Chrome      | com.android.chrome                          |
+| Galeria            | com.android.calendar                        |
 | Google Search      | com.google.android.googlequicksearchbox     |
 | Clima              | com.miui.weather2                           |
 | Bússola            | com.miui.compass                            |
 | Galeria            | com.miui.gallery                            |
 | Radio.fm           | com.miui.fm                                 |
-| ???                | com.miui.secury                             |
-| ???                | com.android.mms                             |
-| ???                | com.miui.securitycore                       |
-| ???                | com.miui.securitycenter                     |
-| Galeria            | com.android.calendar                        |
-| Galeria            | com.xiaomi.calendar                         |
+| Galeria Miui       | com.xiaomi.calendar                         |
 
-## para procurar o nome do app procure no site da playstore, a url contem o nome do app
-adb shell pm disable-user --user 0 NomeDoPackage
-adb shell pm enable NomeDoPackage
+## Procurando Apps
+pesquise o nome do app na playstore, copie o id da url, exemplo...
+https://play.google.com/store/apps/details?id=com.microsoft.emmx  -- microsoft edge
 
-## exemplo: https://play.google.com/store/apps/details?id=com.microsoft.emmx 
-## (com.microsoft.emmx) nome do app
+o id da url é o nome do pacote do app (com.microsoft.emmx)
 
-## entrar no shell do celular (depuração precisa esta ativada)
-adb devices # seu dispositivo deve aparece e com "attached" device
-adb shell   # entrar no shell
+### Comandos adb
+utilize `adb devices` para verificar se o seu celular está conectado (deporação precisa está ativada)
+na distro Fedora, é necessario inicia o servidor adb como root `sudo adb start-server`
+caso já esteja ligado, use `adb kill-server` e depois inicie como root
+para se conectar ao celular, use `adb shell`
+
+#### Gerenciador de Pacotes pm
+| Comando                  | Descrição                                   |
+|--------------------------|---------------------------------------------|
+| Desativar para o Usuario | `pm disable-user --user 0 NomeDoPacote`     |
+| Ativar                   | `pm enable NomeDoPacote`                    |
+| Remover                  | `pm uninstall NomeDoPacote`                 |
+| Instalar                 | `pm install NomeDoPacote`                   |
